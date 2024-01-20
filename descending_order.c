@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     int arr[1000],n;
     printf("Enter number of elements:");
     scanf("%d",&n);
