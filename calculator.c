@@ -14,4 +14,5 @@ int main()
     printf("\n%d",a*b);
     printf("\n%d",a/b);
     printf("\n%d",a%b);
+    
 }
