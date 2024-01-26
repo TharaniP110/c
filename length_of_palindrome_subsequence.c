@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<string.h>
+
 #define max(a,b) ((a>=b)? a:b)
 int lps(char s[],int start,int end)
 {
