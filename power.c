@@ -8,6 +8,7 @@ long int power(int a,int b)
     }
     return Power;
 }
+
 int main()
 {
     int a,b;
