@@ -2,33 +2,28 @@
 int main()
 {
     int n=5;
-    int count=0;
-    int k=0;
+    int count=1;
+    
     for(int i=1;i<=n;i++)
     {
-        count=k;
+        int k=0;
         for(int j=1;j<=i;j++)
         {
-            if(i%2==0)
+            
+            if(i%2!=0)
             {
-                printf("%d",count+i);
-                count-=1;
-                if(j!=i){
-                    printf("*");
-                    
-                }
-                k++;
+                printf("%d",count);
+                if(j!=i)printf("*");
             }
             else
             {
-                count++;
-                printf("%d",count);
-                if(j!=i){
-                    printf("*");
-                }
+                printf("%d",count+i-j-k);
                 k++;
+                if(j!=i)printf("*");
             }
+            count++;
         }
+        
         printf("\n");
     }
 }
