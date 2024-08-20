@@ -1,15 +1,15 @@
 #include<stdio.h>
-#include<string.h>
 int main()
 {
-    int binary,decimal=0,base=1;
-    scanf("%d",&binary);
-    while(binary>0)
+    int n;
+    scanf("%d",&n);
+    int a=1;
+    int ans=0;
+    while(n!=0)
     {
-        int d=binary%10;
-        binary/=10;
-        decimal+=d*base;
-        base*=2;
+        ans=ans+(n%10)*a;
+        n/=10;
+        a=a*2;
     }
-    printf("%d",decimal);
+    printf("%d",ans);
 }
